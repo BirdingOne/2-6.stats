@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f0; /* 밝게 섞인 배경색 */
+    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
     text-align: center;
   }
@@ -26,31 +26,31 @@ body {
   }
   
   .player {
-    display: flex; /* Flexbox 레이아웃 사용 */
-    align-items: center; /* 아이템들을 세로 중앙 정렬 */
+    display: flex;
+    align-items: center;
   }
   
   .rank {
-    margin-right: 10px; /* 순위와 이미지 사이의 간격 조절 */
+    margin-right: 10px;
   }
   
   .player-info {
-    display: flex; /* Flexbox 레이아웃 사용 */
-    align-items: center; /* 아이템들을 세로 중앙 정렬 */
+    display: flex;
+    align-items: center;
   }
   
   .player-image {
-    width: 40px; /* 이미지 컨테이너의 너비 */
-    height: 40px; /* 이미지 컨테이너의 높이 */
-    background-color: #3498db; /* 이미지 컨테이너의 배경색 (밝게 섞인 색상) */
-    border-radius: 50%; /* 이미지 컨테이너를 원 모양으로 만듦 */
-    overflow: hidden; /* 이미지 컨테이너 내부의 내용을 잘라냄 */
-    margin-right: 10px; /* 이미지와 이름 사이의 간격 조절 */
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
   }
   
   .player-image img {
-    width: 100%; /* 이미지를 컨테이너에 꽉 차게 표시 */
-    height: auto; /* 가로세로 비율 유지 */
+    width: 100%;
+    height: auto;
   }
   .name {
     margin-right: 10px; /* 순위와 이미지 사이의 간격 조절 */
