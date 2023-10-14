@@ -6,6 +6,13 @@ body {
   overflow-y: auto;
 }
 
+.horizontal-scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  width: 100%;
+}
+
+
 .container {
   display: flex;
   justify-content: space-around;
