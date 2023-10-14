@@ -1,60 +1,76 @@
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.top-scorer, .top-assist {
+  background-color: #3498db;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  width: 20%;
+  text-align: left;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  padding:10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  overflow-y: auto;
   
-  .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
-  }
-  
-  .top-scorer, .top-assist {
-    background-color: #3498db;
-    border-radius: 20px;
-    padding: 20px;
-    color: white;
-    width: 20%;
-    text-align: left;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .player {
-    display: flex;
-    align-items: center;
-  }
-  
-  .rank {
-    margin-right: 10px;
-  }
-  
-  .player-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .player-image {
-    width: 40px;
-    height: 40px;
-    background-color: #3498db;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 10px;
-  }
-  
-  .player-image img {
-    width: 100%;
-    height: auto;
-  }
-  .name {
-    margin-right: 10px; /* 순위와 이미지 사이의 간격 조절 */
-  }
-  
-  /* 다른 스타일링을 원하는 대로 추가 가능 */
-  
+}
+
+.rank {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.player-image {
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.player-image img {
+  width: 100%;
+  height: 100%;
+}
+.name {
+  margin-right: 10px;
+}
+
+.player-details {
+  flex-grow: 1;
+  text-align: right;
+  white-space: nowrap;
+}
+/* 다른 스타일링을 원하는 대로 추가 가능 */
