@@ -1,3 +1,5 @@
+/* for desktop user */
+
 body {
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
@@ -10,8 +12,8 @@ body {
   white-space: nowrap;
   overflow-x: auto;
   width: 100%;
+  background-color: #f0f0f0;
 }
-
 
 .container {
   display: flex;
@@ -25,8 +27,9 @@ body {
   border-radius: 20px;
   padding: 20px;
   color: white;
-  width: 20%;
+  width: 50%;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -67,6 +70,7 @@ h2 {
 .player-image img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .name {
   margin-right: 10px;
@@ -81,4 +85,24 @@ h2 {
   text-align: right;
   white-space: nowrap;
 }
-/* 다른 스타일링을 원하는 대로 추가 가능 */
+
+/* for mobile user */
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .top-scorer, .top-assist {
+    width: 100%
+  }
+  .player {
+    flex-direction: column;
+  }
+  .player-image {
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .rank, .name, .stats {
+    text-align: center;
+  }
+}
