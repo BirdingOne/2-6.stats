@@ -1,5 +1,4 @@
 /* for desktop user */
-
 body {
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
@@ -12,7 +11,8 @@ body {
   white-space: nowrap;
   overflow-x: auto;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0
+  ;
 }
 
 .container {
@@ -23,7 +23,7 @@ body {
 }
 
 .top-scorer, .top-assist {
-  background-color: #a341e0;
+  background-color: #2e2d2d;
   border-radius: 20px;
   padding: 20px;
   color: white;
@@ -41,7 +41,7 @@ h2 {
   display: flex;
   align-items: center;
   padding:10px;
-  border: 1px solid black;
+  border: 1px solid #2e2d2d;
   margin-bottom: 10px;
 }
 
@@ -72,27 +72,35 @@ h2 {
   height: 100%;
   object-fit: cover;
 }
+
 .name {
+  flex-grow: 100;
+  text-align: left;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
 .stats {
-  font-size: 14px;
+  color: black;
+  min-width: 25px;
+  min-height: 25px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 20px;
+  text-align: center;
 }
 
-.player-details {
-  flex-grow: 1;
-  text-align: right;
-  white-space: nowrap;
-}
 
 /* for mobile user */
 @media screen and (max-width: 650px) {
   .container {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .top-scorer, .top-assist {
-    width: 100%
+    width: 100%;
   }
   .player {
     flex-direction: column;
@@ -106,3 +114,10 @@ h2 {
     text-align: center;
   }
 }
+
+/* .player-details {
+  flex-grow: 100;
+  margin-left: 10px;
+  text-align: left;
+  white-space: nowrap;
+} */
