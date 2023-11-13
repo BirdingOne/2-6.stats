@@ -96,23 +96,29 @@ h2 {
 @media screen and (max-width: 650px) {
   .container {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
   }
   .top-scorer, .top-assist {
     width: 100%;
   }
   .player {
-    flex-direction: column;
+    flex-direction: row;
   }
   .player-image {
     margin: 0 auto;
     border-radius: 50%;
     overflow: hidden;
   }
-  .rank, .name, .stats {
+  .rank, .stats {
     text-align: center;
   }
+  .name {
+  flex-grow: 100;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 }
 
 /* .player-details {
