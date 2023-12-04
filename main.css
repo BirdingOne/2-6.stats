@@ -22,14 +22,14 @@ body {
   padding: 20px;
 }
 
-.top-scorer, .top-assist {
+.top-scorer, .top-assist, .attack-point {
   background-color: #2e2d2d;
   border-radius: 20px;
   padding: 20px;
   color: white;
   width: 35%;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 10px;
 }
 
 h2 {
@@ -93,13 +93,13 @@ h2 {
 
 
 /* for mobile user */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
   .container {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  .top-scorer, .top-assist {
+  .top-scorer, .top-assist, .attack-point {
     width: 100%;
   }
   .player {
